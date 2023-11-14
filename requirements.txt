@@ -1,7 +1,7 @@
-streamlit==0.81.1
-opencv-contrib-python-headless
+numpy
 opencv-python-headless
 opencv-python
+streamlit==0.81.1
 streamlit_webrtc==0.20.0
 imutils
 PILLOW
@@ -11,8 +11,7 @@ av
 streamlit-cropper
 mediapipe
 tensorflow
-numpy
-pandas
+
 keras
 keras-preprocessing
 scikit-image
