@@ -38,7 +38,7 @@ RTC_CONFIGURATION = RTCConfiguration(
     {"iceServers": [{"urls": ["stun:stun.l.google.com:19302"]}]}
 )
         
-webrtc_ctx = webrtc_streamer(key="dlib", 
+webrtc_ctx = webrtc_streamer( key="dlib", 
                               mode=WebRtcMode.SENDRECV,
                               rtc_configuration=RTC_CONFIGURATION,
                               video_processor_factory=VideoProcessor,
