@@ -38,20 +38,13 @@ RTC_CONFIGURATION = RTCConfiguration(
     {"iceServers": [{"urls": ["stun:stun.l.google.com:19302"]}]}
 )
         
-webrtc_ctx = webrtc_streamer(key="dlib", 
-                              mode=WebRtcMode.SENDRECV,
+webrtc_streamer(key="dlib", mode=WebRtcMode.SENDRECV,
                               rtc_configuration=RTC_CONFIGURATION,
                               video_processor_factory=VideoProcessor,
                               media_stream_constraints={"video": True, "audio": False},
                               async_processing=True)
 
 
-while True:
-    if webrtc_ctx.video_transformer:
-        result = webrtc_ctx.video_transformer.result_queue.get(timeout=1.0)
-        labels_placeholder.table(result)
-    else:
-        break
 
 
 
