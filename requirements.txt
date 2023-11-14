@@ -5,6 +5,7 @@ scikit-learn
 matplotlib
 seaborn
 streamlit_webrtc
+opencv-python
 opencv-python-headless
 imutils
 PILLOW
@@ -19,4 +20,14 @@ keras
 keras-preprocessing
 tensorflow
 scikit-image
-opencv-python
+
+google-cloud-storage
+google-cloud-firestore
+
+beautifulsoup4
+requests
+
+shapely
+geopandas
+geopy
+
