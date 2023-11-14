@@ -1,11 +1,6 @@
 import streamlit as st
-
 from streamlit_webrtc import ClientSettings, VideoTransformerBase, VideoProcessorBase, RTCConfiguration, WebRtcMode, webrtc_streamer
-
-
 import av
-import cv2
-
 from imutils import face_utils
 import dlib
 
@@ -13,10 +8,10 @@ st.title("Streamlit WebRTC using DLIB")
 st.write("This is a sample to integrate DLIB :D ")
 
 
-x = 'shape_predictor_68_face_landmarks.dat'
+p = 'shape_predictor_68_face_landmarks.dat'
 
 detector = dlib.get_frontal_face_detector()
-predictor = dlib.shape_predictor(x)
+predictor = dlib.shape_predictor(p)
 
 class VideoProcessor:
     
