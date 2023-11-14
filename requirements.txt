@@ -19,3 +19,4 @@ keras
 keras-preprocessing
 tensorflow
 scikit-image
+opencv-python
