@@ -12,7 +12,7 @@ st.write("This is a sample to integrate DLIB :D ")
 p = 'shape_predictor_68_face_landmarks.dat'
 
 detector = dlib.get_frontal_face_detector()
-predictor = dlib.shape_predictor(p)
+predictor = dlib.shape_predictor("shape_predictor_68_face_landmarks.dat")
 
 def video_frame_callback(frame):
     img = frame.to_ndarray(format="bgr24")
